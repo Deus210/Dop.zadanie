@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  InfiniteScrolling
 //
-//  Created by Andrey Antipov on 11.02.2021.
+//  Created by Chupahin Arcady on 10.04.2023.
 //
 
 import UIKit

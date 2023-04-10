@@ -2,7 +2,7 @@
 //  NetworkModel.swift
 //  InfiniteScrolling
 //
-//  Created by Andrey Antipov on 14.02.2021.
+//  Created by Chupahin Arcady on 10.04.2023.
 //
 
 import Foundation
@@ -16,14 +16,14 @@ class NetworkModel {
     
     private init() {}
     
-    // Send request and save response
+   
     func sendRequest<ResultFormat: Decodable>(_ url: String,
                      method: String,
                      parameters: [String: String],
                      headers: [String: String],
                      completion: @escaping (Result<ResultFormat>) -> Void) {
         var components = URLComponents(string: url)!
-        // Each element must be URLQueryItem
+        
         components.queryItems = parameters.map { (key, value) in
             URLQueryItem(name: key, value: value)
         }
@@ -70,7 +70,7 @@ class NetworkModel {
         }.resume()
     }
     
-    // Loading and saving an image
+    
     func loadImage(imageURL: URL,
                    completion: @escaping (Result<UIImage>) -> ()) {
         DispatchQueue.global(qos: .utility).async {

@@ -2,7 +2,7 @@
 //  LoadingCollectionViewCell.swift
 //  InfiniteScrolling
 //
-//  Created by Andrey Antipov on 13.02.2021.
+//  Created by Chupahin Arcady on 10.04.2023.
 //
 
 import UIKit
